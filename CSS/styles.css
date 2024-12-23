@@ -1,0 +1,358 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+
+/* Navegación */
+nav {
+    background-color: #3776bc; /* True Blue */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los enlaces se acomoden en varias líneas si es necesario */
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #004080; /* Azul */
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 15px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+section h2 {
+    color: #008000; /* Verde */
+}
+
+/* Pie de página */
+footer {
+    background-color: #ff6600; /* Naranja */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffcc00; /* Amarillo claro */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del nav */
+#emergencias-nav {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    background-color: #f4f4f4; /* Fondo claro */
+    border-top: 4px solid #ff6600; /* Línea superior de acento */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#emergencias-nav h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #004080;
+}
+
+#emergencias-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+#emergencias-nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Tamaño estándar por elemento */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#emergencias-nav ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#emergencias-nav ul li .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.icon.ayuntamiento {
+    background-color: #004080;
+}
+
+.icon.seguridad {
+    background-color: #ff6600;
+}
+
+.icon.proteccion {
+    background-color: #008000;
+}
+
+.icon.movilidad {
+    background-color: #ffa500;
+}
+
+.icon.servicios {
+    background-color: #00bfff;
+}
+
+#emergencias-nav ul li span {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#emergencias-nav ul li .contacto {
+    font-size: 0.9em;
+    color: #555;
+}
+
+#emergencias-nav ul li .contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#emergencias-nav ul li .contacto ul li {
+    margin: 5px 0;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    #emergencias-nav ul li {
+        width: 150px;
+        padding: 10px;
+    }
+
+    #emergencias-nav ul li .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    #emergencias-nav ul li span {
+        font-size: 0.9em;
+    }
+
+    #emergencias-nav ul li .contacto {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    #emergencias-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #emergencias-nav ul li {
+        width: 90%;
+    }
+}
+/* Estilos Generales */
+.section-title {
+    text-align: center;
+    font-size: 1.8em;
+    color: #004080; /* Azul oscuro */
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Contenedor de la tabla */
+.table-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1em;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e6f0ff;
+    cursor: pointer;
+}
+
+td {
+    color: #333;
+}
+
+td strong {
+    color: #004080;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .table-container {
+        width: 90%;
+    }
+
+    th, td {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-container {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 0.9em;
+    }
+}   
+/* Estilo general para la sección */
+#programasdif-nav {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#programasdif-nav h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la lista */
+#programasdif-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#programasdif-nav ul li {
+    margin-bottom: 15px;
+}
+
+/* Enlaces de la lista */
+.info-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.info-item:hover {
+    background: #e6f0ff;
+    transform: translateY(-3px);
+    color: #004080;
+}
+
+/* Iconos */
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.icon.alimentaria {
+    background-image: url('icons/alimentaria.png'); /* Ruta del ícono */
+    background-color: #ffcc80; /* Color de fondo del ícono */
+}
+
+.icon.ayuda {
+    background-image: url('icons/ayuda.png');
+    background-color: #ff8080;
+}
+
+.icon.organizacion {
+    background-image: url('icons/organizacion.png');
+    background-color: #80bfff;
+}
+
+.icon.procuraduria {
+    background-image: url('icons/procuraduria.png');
+    background-color: #aaff80;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #programasdif-nav {
+        width: 90%;
+    }
+
+    .info-item {
+        font-size: 1em;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+}

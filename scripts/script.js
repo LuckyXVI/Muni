@@ -1,0 +1,1 @@
+console.log('Imagen cargada:', document.getElementById('banner').style.backgroundImage);

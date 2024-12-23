@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página oficial del Gobierno Municipal de Tala, Jalisco. Información, servicios y transparencia.">
+    <meta name="author" content="Gobierno Municipal de Tala, Jalisco">
+    <title>Gobierno Municipal de Tala, Jalisco</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS externo -->
+    <style>
+        /* Estilos para el menú desplegable */
+        .menu-desplegable {
+            width: 80%;
+            margin: 20px auto;
+            padding: 0;
+            list-style: none;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            overflow: hidden;
+        }
+
+        .menu-desplegable li {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-desplegable li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-desplegable button {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1em;
+            text-align: left;
+            background: #004080;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .menu-desplegable button:hover {
+            background: #0059b3;
+        }
+
+        .submenu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: #f1f1f1;
+        }
+
+        .submenu ul {
+            list-style: none;
+            padding: 10px 20px;
+            margin: 0;
+        }
+
+        .submenu ul li {
+            padding: 8px 0;
+            color: #333;
+            font-size: 0.95em;
+        }
+
+        .submenu ul li:hover {
+            color: #004080;
+            cursor: pointer;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .menu-desplegable {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gobierno Municipal de Tala, Jalisco</h1>
+        <p>Es tiempo de la gente</p>
+    </header>
+
+    <main>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Servicios.html">Servicios</a>
+            <a href="hacienda.html">Hacienda Municipal</a>
+            <a href="Transparencia.html ">Transparencia</a>
+            <a href="Dif.html">DIF Municipal</a>
+            <a href="https://omast.com.mx/">OMAST</a>
+        </nav>
+        <section>
+            <center><h2>Articulo 8</h2></center>            
+            <ul class="menu-desplegable">
+                <!-- Opciones del 1 al 14 -->
+                <li>
+                    <button onclick="toggleMenu('submenu1')">I. La necesaria para el ejercicio del derecho a la información pública, que comprende:</button>
+                    <div id="submenu1" class="submenu">
+                        <ul>
+                            <li>A) La Ley General, la presente Ley y su Reglamento;</li>
+                            <li>B) El reglamento interno para el manejo de la información pública del sujeto obligado;</li>
+                            <li>C) Los lineamientos estatales de clasificación de información pública, emitidos por el Instituto;</li>
+                            <li>D) Los lineamientos estatales de publicación y actualización de información fundamental, emitidos por el Instituto;</li>
+                            <li>E) Los lineamientos estatales de protección de información confidencial y reservada, emitidos por el Instituto; </li>
+                            <li>F) Los lineamientos generales que emita el Sistema Nacional;</li>
+                            <li>G) Las actas y resoluciones del Comité de Transparencia;</li>
+                            <li>H) Dirección electrónica donde podrán recibirse las solicitudes de acceso a la información; </li>
+                            <li>I) La denominación, domicilio, teléfonos, faxes, dirección electrónica y correo electrónico oficiales del sujeto obligado;</li>
+                            <li>J) El directorio de todos los servidores públicos del sujeto obligado, a partir del nivel de jefe de departamento o su equivalente, o de menor nivel, cuando se brinde atención al público; manejen o apliquen recursos públicos; realicen actos de autoridad o presten servicios profesionales bajo el régimen de confianza u honorarios y personal de base. El directorio deberá incluir, al menos, el nombre, cargo o nombramiento asignado, nivel del puesto en la estructura orgánica, fecha de alta en el cargo, número telefónico, domicilio para recibir correspondencia y dirección de correo electrónico oficiales; el directorio a que se refiere este inciso deberá contener, además, el nombre de todas las cuentas oficiales de redes sociales digitales que administren los sujetos obligados, así como aquellas de los servidores públicos
+                                 que voluntariamente decidan incorporarse a dicho directorio en los términos establecidos por el Sistema Nacional de Transparencia;</li>
+                            <li>K) El nombre del encargado y de los integrantes, teléfono, fax y correo electrónico del Comité de Transparencia;</li>
+                            <li>L) El nombre del encargado, teléfono, fax y correo electrónico de la Unidad;  </li>
+                            <li>M) El manual y formato de solicitud de información pública; </li>
+                            <li>N) Índice de los expedientes clasificados como reservados, por área responsable de la información y tema; y</li>
+                            <li>Ñ) La estadística de las solicitudes de información pública atendidas, precisando las procedentes, parcialmente procedentes e improcedentes;
+                                 así como la estadística de visitas a su sistema de consulta electrónica;</li>                            
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu2')">II. La información sobre el marco jurídico aplicable al y por el sujeto obligado, que comprende:</button>
+                    <div id="submenu2" class="submenu">
+                        <ul>
+                            <li>A) Las disposiciones de las Constituciones Políticas Federal y Estatal;</li>
+                            <li>B) Los Tratados y convenciones internacionales suscritas por México;</li>
+                            <li>C) Las leyes federales y estatales;</li>
+                            <li>D) Los reglamentos federales, estatales y municipales;</li>
+                            <li>E) Los decretos, acuerdos, criterios, políticas, reglas de operación y demás normas jurídicas generales;</li>
+                            <li>Marco Normativo</li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- Repite este bloque para las demás opciones -->
+                <li>
+                    <button onclick="toggleMenu('submenu3')">III. La información sobre la planeación del desarrollo, aplicable al y por el sujeto obligado, que comprende:</button>
+                    <div id="submenu3" class="submenu">
+                        <ul>
+                            <li>A .- Los apartados del Plan Nacional de Desarrollo que sirve de marco general a la planeación de las áreas relativas a las funciones del sujeto obligado;</li>
+                            <li>B.-Los apartados de los programas federales;</li>
+                            <li>C.- Los apartados del Plan Estatal de Desarrollo;</li>
+                            <li>D.-Los programas estatales;</li>
+                            <li>E.- Los programas regionales;</li>
+                            <li>F.-Las evaluaciones y encuestas que hagan los sujetos obligados a programas financiados con recursos públicos;  </li>
+                            <li>G.-Los demas instrumentos de planeacion no comprendidos en los incisos anteriores aplicables al y por el sujeto obligado. </li>
+                            <li>PLAN MUNICIPAL DE DESARROLLO</li>
+                            <li>PLAN ESTATAL DE DESARROLLO 
+                                se advierte que este sujeto obligado publica y pone a dispocisicion de los ciudadanos la unica informacion aplicable respecto a este inciso </li>                                                      
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu4')">IV. La información sobre la planeación estratégica gubernamental aplicable al y por el sujeto obligado, que comprende:</button>
+                    <div id="submenu4" class="submenu">
+                        <ul>
+                            <li>A) El plan general institucional del municipio;</li>
+                            <li>B) Los programas operativos anuales aplicables;</li>
+                            <li>C) Los manuales de organización aplicables</li>
+                            <li>D) Los manuales de operación aplicables ADMINISTRACION 2021-2024</li>
+                            <li>E) Los manuales de procedimientos. ADMINISTRACION 2021-2024</li>
+                            <li>F) Los manuales de servicios ADMINISTRACION 2021-2024</li>
+                            <li>G) Los protocolos ADMINISTRACION 2021-2024</li>
+                            <li>H) Los indicadores que permitan rendir cuenta de sus objetivos y resultados;</li>
+                            <li>I) Los demás instrumentos normativos internos</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu5')">V. La información financiera, patrimonial y administrativa, que comprende:</button>
+                    <div id="submenu5" class="submenu">
+                        <ul>
+                            <li>A) Las partidas del Presupuesto de Egresos de la Federación y del Presupuesto de Egresos del Estado, así como los conceptos del clasificador por objeto del gasto aplicables al y por el sujeto obligado, de cuando menos los últimos tres años;</li>
+                            <li>B) Los ingresos extraordinarios recibidos por cualquier concepto, señalando el origen de los recursos, el nombre de los responsables de recibirlos, administrarlos y ejercerlos, así como el proyecto o programa donde serán aplicados</li>
+                            <li>C) El presupuesto de egresos anual y, en su caso, el clasificador por objeto del gasto del sujeto obligado, de cuando menos los últimos tres años;</li>
+                            <li>D) Las convocatorias a concursos para ocupar cargos públicos y los resultados de los mismos</li>
+                            <li>E) El organigrama del sujeto obligado, con las modificaciones de cuando menos los últimos tres años, así como la plantilla del personaldel sujeto obligado, con las modificaciones de cuando menos los últimos tres años, en la que se incluya el número total de plazas del personal base, del personal de confianza y las vacantes;</li>
+                            <li>F) Las remuneraciones mensuales por puesto, incluidas todas las prestaciones, estímulos o compensaciones;</li>
+                            <li>G)  Las nóminas completas del sujeto obligado en las que se incluya las gratificaciones, primas, comisiones, dietas y estímulos, de cuando menos los últimos tres años, y en su caso, con sistema de busqueda;</li>
+                            <li>H) El listado de jubilados y pensionados y el monto que reciben</li>
+                            <li>I) Los estados financieros mensuales, de cuando menos los últimos tres años;</li>
+                            <li>J) Los gastos de comunicación social, de cuando menos los últimos tres años, donde se señale cuando menos la fecha, monto y partida de la erogación, responsable directo de la autorización de la contratación, denominación del medio de comunicación contratado, descripción del servicio contratado, justificación y relación con alguna función o servicio públicos;</li>
+                            <li>K) El contrato de prestación de servicios o por honorarios, y el gasto realizado por concepto de pago de asesorías al sujeto obligado, donde se señale nombre de la empresa, institución o individuos, el concepto de cada una de las asesorías, así como el trabajo realizado;</li>
+                            <li>L) Los subsidios, en especie o en numerario, recibidos por el sujeto obligado, así como los otorgados por el sujeto obligado:</li>
+                            <li>M) El listado de personas físicas o jurídicas a quienes, por cualquier motivo, se les asigne o permita usar recursos públicos o, en los términos de las disposiciones aplicables, realicen actos de autoridad, así como los informes que dichas personas les entreguen sobre el uso y destino de dichos recursos;</li>
+                            <li>N) Las cuentas públicas y demás informes de gestión financiera; las auditorías internas y externas realizadas, así como los informes de gestión financiera del sujeto obligado, de cuando menos los últimos tres años;</li>
+                            <li>Ñ) Los padrones de proveedores o contratistas, de cuando menos los últimos tres años.</li>
+                            <li>O) La información sobre adjudicaciones directas en materia de adquisiciones, obra pública, proyectos de inversión y prestación de servicios, de cuando menos los últimos tres años</li>
+                            <li>P) La información sobre concursos por invitación y licitaciones públicas en materia de adquisiciones, obra pública, proyectos de invresión prestación de servicios, de cuando menos los últimos tres años: El nombre, denominación o razón social y clave del Registro Federal de Contribuyentes de quienes se les hubiera cancelado o condonado algún crédito fiscal, los montos respectivos, así como la información estadística sobre las exenciones previstas en las disposiciones fiscales</li>
+                            <li>Q) El nombre, denominación o razón social y clave del Registro Federal de Contribuyentes de quienes se les hubiera cancelado o condonado algún crédito fiscal, los montos respectivos, así como la información estadística sobre las exenciones previstas en las disposiciones fiscales;</li>
+                            <li>R) Los inventarios de bienes muebles e inmuebles del sujeto obligado, de cuando menos los últimos tres años, donde se señale cuando menos la descripción, el valor, el régimen jurídico, y el uso o afectación del bien;</li>
+                            <li>S) Los gastos de representación, viáticos y viajes oficiales, su costo, itinerario, agenda y resultados</li>
+                            <li>T) Las concesiones , licencias, permisos o autorizaciones otorgadas de los últimos tres años;</li>
+                            <li>U) Los decretos y expedientes relativos a las expropiaciones que realicen por utilidad pública;</li>
+                            <li>V) Las pólizas de los cheques expedidos, con identificación del número de cheque o transferencia, monto y nombre del beneficiario, indicando el motivo de la erogación, en el que de manera detallada y completa se indique para qué se erogó el recurso público, o en su caso la descripción que aparezca en la factura correspondiente; siempre y cuando con ello se aporten los elementos cualitativos de la finalidad del cheque o transferencia</li>
+                            <li>W) El estado de la deuda pública del sujeto obligado, donde se señale cuando menos responsable de la autorización, fecha de contratación, monto del crédito, tasa de interés, monto total amortizable, plazo de vencimiento, institución crediticia, objeto de aplicación y avance de aplicación de cada deuda contratada;</li>
+                            <li>X) Los estados de cuenta bancarios que expiden las instituciones financieras, número de cuentas bancarias, estados financieros, cuentas de fideicomisos e inversiones;</li>
+                            <li>Y) La información en versión pública de las declaraciones patrimoniales de los servidores públicos que así lo determinen, en los sistemas habilitados para ello, de acuerdo a la normatividad aplicable; </li>
+                            <li>Z) El registro de los procedimientos de responsabilidad administrativa, con indicación del número de expediente, fecha de ingreso, nombre del denunciante, nombre y cargo del denunciado, causa del procedimiento, estado procesal y, en su caso, la sanción impuesta;</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu6')">VI. La información sobre la gestión pública:</button>
+                    <div id="submenu6" class="submenu">
+                        <ul>
+                            <li>A)  Las funciones públicas que realiza el sujeto obligado, donde se señale cuando menos el fundamento legal, la descripción de la función pública, así como los recursos materiales, humanos y financieros asignados para la realización de la función pública;</li>
+                            <li>B)  Los servicios públicos que presta el sujeto obligado, donde se señale cuando menos la descripción y cobertura del servicio público; los recursos materiales, humanos y financieros asignados para la prestación del servicio público, y el número y tipo de beneficiarios directos e indirectos del servicio público;</li>
+                            <li>C) Las obras públicas que realiza el sujeto obligado, de cuando menos los últimos tres años, donde se señale cuando menos la descripción y ubicación de la obra; el ejecutor y supervisor de la obra; el costo inicial y final; la superficie construida por metros cuadrados; costo por metro cuadrado; su relación con los instrumentos de planeación del desarrollo, y el número y tipo de beneficiarios directos e indirectos de la obra;</li>
+                            <li>D) Los programas sociales que aplica el sujeto obligado, de cuando menos los últimos tres años, donde se señale cuando menos los objetivos, metas, presupuesto y reglas de operación del programa; los requisitos, trámites y formatos para ser beneficiario; la entidad pública ejecutora, el responsable directo, número de personal que lo aplica y el costo de operación del programa; el padrón de beneficiarios del programa, y la medición de avances de la ejecución del gasto, y el cumplimiento de metas y objetivos del programa, incluida la metodología empleada;</li>
+                            <li>E) Las políticas públicas que elabora y aplica el sujeto obligado, de cuando menos los últimos tres años;</li>
+                            <li>F) Los convenios, contratos y demás instrumentos jurídicos suscritos por el sujeto obligado, de cuando menos los últimos tres años;</li>
+                            <li>G) Las concesiones, licencias, permisos, autorizaciones y demás actos administrativos otorgados por el sujeto obligado, de cuando menos los últimos tres años, en el que se incluyan los requisitos para acceder a ellos y, en su caso, los formatos correspondientes;</li>
+                            <li>H) La agenda diaria de actividades del sujeto obligado, de cuando menos el último mes;</li>
+                            <li>I)  El lugar, día y hora de todas las reuniones o sesiones de sus órganos colegiados, junto con el orden del día y una relación detallada de los asuntos a tratar, así como la indicación del lugar y forma en que se puedan consultar los documentos públicos relativos, con cuando menos veinticuatro horas anteriores a la celebración de dicha reunión o sesión Y LAS CONVOCATORIAS DE LAS COMISIONES EDILICIAS;</li>
+                            <li>Ordenes del día de las sesiones del Ayuntamiento </li>
+                            <li>J) Las versiones estenográficas, así como las actas o minutas de las reuniones o sesiones de sus órganos colegiados</li>
+                            <li>Versiones estenográficas de las sesiones del Ayuntamiento</li>
+                            <li>Actas de las sesiones del Ayuntamiento</li>
+                            <li>Transmisiones en vivo de las sesiones de ayuntamiento</li>
+                            <li><a href="https://www.youtube.com/channel/UC-EFCJJxBoAdVRWdt20ePkw">Video sesiones de ayuntamiento</a></li>
+                            <li>Sesiones de las Comisiones Edilicias</li>
+                            <li>Versiones estenográficas de las Sesiones de las Comisiones Edilicias</li>
+                            <li>Actas del Comité de Transparencia</li>
+                            <li>Versiones estenográficas de las Actas del Comité de Transparencia</li>
+                            <li>K) La integración, la regulación básica y las actas de las reuniones de los consejos ciudadanos reconocidos oficialmente por el sujeto obligado con el propósito de que la ciudadanía participe o vigile la actividad de sus órganos y dependencias;</li>
+                            <li>L) Los informes trimestrales y anuales de actividades del sujeto obligado, de cuando menos los últimos tres años;</li>
+                            <li>M) Las recomendaciones emitidas por los órganos públicos del Estado mexicano u organismos internacionales garantes de los derechos humanos, así como las acciones que han llevado a cabo para su atención;</li>
+                            <li>N) Las estadísticas que generen en cumplimiento de sus facultades, competencias o funciones con la mayor desagregación posible;</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu7')">VII. Las versiones públicas de las resoluciones y laudos que emitan los sujetos obligados, en procesos o procedimientos seguidos en forma de juicio y que hayan causado estado;</button>
+                    <div id="submenu7" class="submenu">
+                        <ul>
+                            <li> versiones públicas</li>                            
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu8')">VIII. Los mecanismos e instrumentos de participación ciudadana que puedan acceder o ejercer ante el sujeto obligado;</button>
+                    <div id="submenu8" class="submenu">
+                        <ul>
+                            <li>Los mecanismos e instrumentos de participación ciudadana</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu9')">IX. La información pública ordinaria proactiva o focalizada que considere el sujeto obligado, por sí o a propuesta del Instituto;</button>
+                    <div id="submenu9" class="submenu">
+                        <ul>
+                            <li>Pagina y Redes Sociales Oficiales del gobierno de Tala, Jalisco</li>
+                            <li>ORGANISMOS PUBLICOS DESCENTRALIZADOS DEL AYUNTAMIENTO DIF TALA Y OMAST</li>
+                            <li>COVID19</li>
+                            <li>GACETA MUNICIPAL </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu10')">X. Las condiciones generales de trabajo, contratos o convenios que regulen las relaciones laborales del personal de base o de confianza, así como los recursos públicos económicos, en especie o donativos, que sean entregados a los sindicatos y ejerzan como recursos públicos;</button>
+                    <div id="submenu10" class="submenu">
+                        <ul>
+                            <li>CONDICIONES GENERALES DE TRABAJO</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu11')">XI. Los estudios financiados con recursos públicos;</button>
+                    <div id="submenu11" class="submenu">
+                        <ul>
+                            <li>Estudios financiados </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu12')">XII. Los ingresos recibidos por cualquier concepto señalando el nombre de los responsables de recibirlos, administrarlos y ejercerlos, así como su destino, indicando el destino de cada uno de ellos;</button>
+                    <div id="submenu12" class="submenu">
+                        <ul>
+                            <li>Los ingresos</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu13')">XIII. El catálogo de disposición y guía de archivo documental; los dictámenes de baja y actas de baja documental y transferencia secundaria, programa e informe anual de desarrollo archivístico y actas de documentación siniestrada; así como, los resultados de las auditorías archivísticas, las determinaciones y resoluciones del Consejo Estatal de Archivos; y</button>
+                    <div id="submenu13" class="submenu">
+                        <ul>
+                            <li>El catálogo de disposición y guía de archivo documental;</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu14')">XIV. La demás información pública a que obliguen las disposiciones federales y la Ley General de Contabilidad Gubernamental, así como aquella que se genere por la ejecución del gasto público con recursos federales;</button>
+                    <div id="submenu14" class="submenu">
+                        <ul>
+                            <li> La demás información pública a que obliguen las disposiciones federales y la Ley General de Contabilidad Gubernamental, así como aquella que se genere por la ejecución del gasto público con recursos federales;</li>
+                            <li>La publicación de información fundamental debe realizarse con independencia de su publicación oficial y debe reunir los requisitos de claridad, calidad, certeza, veracidad, oportunidad y confiabilidad.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <nav id="emergencias-nav">
+            <h2>Números de Emergencias</h2>
+            <ul>
+                <li>
+                    <div class="icon ayuntamiento"></div>
+                    <span>Ayuntamiento</span>
+                    <div class="contacto">
+                        <ul>
+                            <li>384 690 5100</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon seguridad"></div>
+                    <span>Seguridad Pública</span>
+                    <div class="contacto">
+                        <ul>
+                            <li>384 738 0555</li>
+                            <li>384 738 0757</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon proteccion"></div>
+                    <span>Protección Civil</span>
+                    <div class="contacto">
+                        <ul>
+                            <li>384 738 3696</li>
+                            <li>384 733 2183</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon movilidad"></div>
+                    <span>Movilidad</span>
+                    <div class="contacto">
+                        <ul>
+                            <li>384 738 0036</li>
+                            <li>384 690 5129</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon servicios"></div>
+                    <span>Servicios Públicos</span>
+                    <div class="contacto">
+                        <ul>
+                            <li>384 738 0300</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+
+    <footer>
+        <p>Ramón Corona #5, Tala, Jalisco</p>
+        <p>&copy; 2024 Gobierno Municipal de Tala, Jalisco. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Función para alternar la visibilidad de los submenús
+        function toggleMenu(submenuId) {
+            const submenu = document.getElementById(submenuId);
+            if (submenu.style.maxHeight) {
+                submenu.style.maxHeight = null;
+            } else {
+                submenu.style.maxHeight = submenu.scrollHeight + "px";
+            }
+        }
+    </script>
+</body>
+</html>

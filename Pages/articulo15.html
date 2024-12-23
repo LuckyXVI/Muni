@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página oficial del Gobierno Municipal de Tala, Jalisco. Información, servicios y transparencia.">
+    <meta name="author" content="Gobierno Municipal de Tala, Jalisco">
+    <title>Gobierno Municipal de Tala, Jalisco</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS externo -->
+    <style>
+        /* Estilos para el menú desplegable */
+        .menu-desplegable {
+            width: 80%;
+            margin: 20px auto;
+            padding: 0;
+            list-style: none;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            overflow: hidden;
+        }
+
+        .menu-desplegable li {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-desplegable li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-desplegable button {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1em;
+            text-align: left;
+            background: #004080;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .menu-desplegable button:hover {
+            background: #0059b3;
+        }
+
+        .submenu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: #f1f1f1;
+        }
+
+        .submenu ul {
+            list-style: none;
+            padding: 10px 20px;
+            margin: 0;
+        }
+
+        .submenu ul li {
+            padding: 8px 0;
+            color: #333;
+            font-size: 0.95em;
+        }
+
+        .submenu ul li:hover {
+            color: #004080;
+            cursor: pointer;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .menu-desplegable {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gobierno Municipal de Tala, Jalisco</h1>
+        <p>Es tiempo de la gente</p>
+    </header>
+
+    <main>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Servicios.html">Servicios</a>
+            <a href="hacienda.html">Hacienda Municipal</a>
+            <a href="Transparencia.html ">Transparencia</a>
+            <a href="Dif.html">DIF Municipal</a>
+            <a href="https://omast.com.mx/">OMAST</a>
+        </nav>
+        <section>
+            <center><h2>Articulo 15</h2></center>            
+            <ul class="menu-desplegable">
+                <!-- Opciones del 1 al 27 -->
+                <li>
+                    <button onclick="toggleMenu('submenu1')">I. La obligatoria para todos los sujetos obligados;</button>
+                    <div id="submenu1" class="submenu">
+                        <ul>
+                            <li>ART. 8 LEY DE TRANSPARENCIA Y ACCESO A LA INFORMACION PUBLICA DEL ESTADO DE JALISCO Y SUS MUNICIPIOS</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu2')">II. La integración del ayuntamiento, las comisiones edilicias y demás órganos que establezca su organigrama;</button>
+                    <div id="submenu2" class="submenu">
+                        <ul>
+                            <li>Comisiones Edilicias</li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- Repite este bloque para las demás opciones -->
+                <li>
+                    <button onclick="toggleMenu('submenu3')">III. Los bandos de policía y buen gobierno, reglamentos, decretos, acuerdos, circulares y demás disposiciones jurídicas expedidas por el Ayuntamiento respectivo;</button>
+                    <div id="submenu3" class="submenu">
+                        <ul>
+                            <li>Bando de policía y gobierno</li>
+                            <li>Reglamentos</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu4')">IV. Las iniciativas presentadas y las exposiciones de motivos de reglamentos vigentes en el municipio;</button>
+                    <div id="submenu4" class="submenu">
+                        <ul>
+                            <li>Iniciativas Presentadas</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu5')">V. Los instrumentos de planeación del desarrollo del municipio y sus modificaciones de cuando menos los últimos 6 años;</button>
+                    <div id="submenu5" class="submenu">
+                        <ul>
+                            <li>Plan Municipal de Desarrollo y Gobernanza</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu6')">VI. Los reglamentos internos, manuales y programas de operación anuales de toda dependencia o entidad pública vigentes de cuando menos los 3 años anteriores;</button>
+                    <div id="submenu6" class="submenu">
+                        <ul>
+                            <li>Los reglamentos</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu7')">VII. Los programas de trabajo de las comisiones edilicias;</button>
+                    <div id="submenu7" class="submenu">
+                        <ul>
+                            <li> Los programas de trabajo de las comisiones edilicias</li>
+                            <li>programa operativo matriz de indicadores</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu8')">VIII. Orden del día de las sesiones del Ayuntamiento, de las comisiones edilicias y de los consejos ciudadanos municipales, con excepción de las reservadas;</button>
+                    <div id="submenu8" class="submenu">
+                        <ul>
+                            <li>Sindico</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu9')">IX. El libro de actas de sesiones de Ayuntamiento, las actas de comisiones edilicias, así como de los consejos ciudadanos municipales con excepción de las reservadas;</button>
+                    <div id="submenu9" class="submenu">
+                        <ul>
+                            <li>Matriz de indicadores</li>
+                            <li>Comiciones Edilicias</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu10')">X. La gaceta municipal y demás órganos de difusión y publicación municipal;</button>
+                    <div id="submenu10" class="submenu">
+                        <ul>
+                            <li>La gaceta municipal</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu11')">XI. La información de los registros públicos que operen, sin afectar la información confidencial obtenida;</button>
+                    <div id="submenu11" class="submenu">
+                        <ul>
+                            <li>Catastro</li>
+                            <li>Registro Civil</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu12')">XII. Los recursos materiales, humanos y financieros asignados a cada dependencia y entidad de la administración pública municipal detallando los correspondientes a cada unidad administrativa al anterior de las mismas;</button>
+                    <div id="submenu12" class="submenu">
+                        <ul>
+                            <li> Los recursos materiales</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu13')">XIII. Los convenios y contratos celebrados para la realización de obra pública;</button>
+                    <div id="submenu13" class="submenu">
+                        <ul>
+                            <li>Los convenios</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu14')">XIV. Los convenios de coordinación o asociación municipal;</button>
+                    <div id="submenu14" class="submenu">
+                        <ul>
+                            <li>Convenios</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu15')">XV. Los convenios para la prestación de servicios públicos coordinados o concesionados;</button>
+                    <div id="submenu15" class="submenu">
+                        <ul>
+                            <li>Convenios</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu16')">XVI. El registro de los Consejos Consultivos Ciudadanos, con indicación de la fecha de su creación, funciones que realizan, así como nombre y cargo de los integrantes;</button>
+                    <div id="submenu16" class="submenu">
+                        <ul>
+                            <li>A15. F16 REGISTRO DE CONSEJOS CONSULTIVOS</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu17')">XVII. El registro de asociaciones de vecinos en el municipio, con indicación de la fecha de creación, nombre de las mismas, delimitación territorial que representa y datos generales de los miembros de sus directivas, así como las uniones o federaciones;</button>
+                    <div id="submenu17" class="submenu">
+                        <ul>
+                            <li>ART.15 F XVII REGISTRO DE ASOCIACIONES VECINALES</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu18')">XVIII. Registro público de bienes del patrimonio municipal;</button>
+                    <div id="submenu18" class="submenu">
+                        <ul>
+                            <li>boletas registrales</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu19')">XIX. La relación del personal y los inventarios de bienes afectos a cada uno de los servicios públicos municipales, con excepción del servicio de seguridad pública y policía preventiva;</button>
+                    <div id="submenu19" class="submenu">
+                        <ul>
+                            <li>inventario de bienes afectos a los servicios público</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu20')">XX. El programa municipal de Desarrollo Urbano, los planes de Desarrollo Urbano de centros de población y los planes parciales de Desarrollo Urbano;</button>
+                    <div id="submenu20" class="submenu">
+                        <ul>
+                            <li>Inexistencia el Consejo Municipal de Desarrollo urbano</li>
+                            <li>PROGRAMA MUNICIPAL DE DESARROLLO URBANO</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu21')">XXI. La integración, las actas de las reuniones y los acuerdos del Consejo Municipal de Desarrollo Urbano;</button>
+                    <div id="submenu21" class="submenu">
+                        <ul>
+                            <li>Inexistencia el Consejo Municipal de Desarrollo urbano</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu22')">XXII. Las autorizaciones de nuevos fraccionamientos y los cambios de uso de suelo junto con las consultas públicas realizadas con los colonos y la integración del expediente respectivo, en los términos del código urbano para el Estado de Jalisco;</button>
+                    <div id="submenu22" class="submenu">
+                        <ul>
+                            <li>Las autorizaciones de nuevos fraccionamientos</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu23')">XXIII. Los indicadores de evaluación de desempeño;</button>
+                    <div id="submenu23" class="submenu">
+                        <ul>
+                            <li>Los indicadores de evaluación</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu24')">XXIV. La estadística de asistencias de las sesiones del Ayuntamiento, de las comisiones edilicias y de los Consejos Ciudadanos Municipales, que contenga el nombre de los Regidores y funcionarios que participan;</button>
+                    <div id="submenu24" class="submenu">
+                        <ul>
+                            <li>Asistencia a sesiones Pleno del Ayuntamiento</li>
+                            <li>ASISTENCIA A SESIONES REGIDORES</li>
+                            <li>lista de asistencia</li>
+                            <li>REGISTRO PARTICIPACION REGIDORES</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu25')">XXV. Los ingresos municipales por concepto de participaciones federales y estatales, así como por ingresos propios que integre a la Hacienda Pública y;</button>
+                    <div id="submenu25" class="submenu">
+                        <ul>
+                            <li>Los ingresos municipales</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu26')">XXVI. En su caso la información relativa a la implementación del presupuesto participativo desde su planeación hasta su ejecución y;</button>
+                    <div id="submenu26" class="submenu">
+                        <ul>
+                            <li>la información relativa</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleMenu('submenu27')">XXVII. La que establezca el reglamento interno de información pública del municipio correspondiente.</button>
+                    <div id="submenu27" class="submenu">
+                        <ul>
+                            <li> La que establezca el Reglamento Interno de Información</li>
+                        </ul>
+                    </div>
+                </li>             
+            </ul>
+        </section>
+        <nav id="emergencias-nav">
+            <h2>Números de Emergencias</h2>
+            <ul>
+                <li>
+                    <div class="icon ayuntamiento"></div>
+                    <span>Ayuntamiento</span>
+                    <div class="contacto">
+                        <ul>
+                            <li>384 690 5100</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon seguridad"></div>
+                    <span>Seguridad Pública</span>
+                    <div class="contacto">
+                        <ul>
+                            <li>384 738 0555</li>
+                            <li>384 738 0757</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon proteccion"></div>
+                    <span>Protección Civil</span>
+                    <div class="contacto">
+                        <ul>
+                            <li>384 738 3696</li>
+                            <li>384 733 2183</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon movilidad"></div>
+                    <span>Movilidad</span>
+                    <div class="contacto">
+                        <ul>
+                            <li>384 738 0036</li>
+                            <li>384 690 5129</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon servicios"></div>
+                    <span>Servicios Públicos</span>
+                    <div class="contacto">
+                        <ul>
+                            <li>384 738 0300</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+
+    <footer>
+        <p>Ramón Corona #5, Tala, Jalisco</p>
+        <p>&copy; 2024 Gobierno Municipal de Tala, Jalisco. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Función para alternar la visibilidad de los submenús
+        function toggleMenu(submenuId) {
+            const submenu = document.getElementById(submenuId);
+            if (submenu.style.maxHeight) {
+                submenu.style.maxHeight = null;
+            } else {
+                submenu.style.maxHeight = submenu.scrollHeight + "px";
+            }
+        }
+    </script>
+</body>
+</html>
