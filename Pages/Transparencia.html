@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página oficial del Gobierno Municipal de Tala, Jalisco. Información, servicios y transparencia.">
     <meta name="author" content="Gobierno Municipal de Tala, Jalisco">
-    <title>Gobierno Municipal de Tala, Jalisco</title>
+    <title>Transparencia - Gobierno Municipal de Tala, Jalisco</title>
     <link rel="stylesheet" href="../CSS/styles.css"> <!-- Archivo CSS externo -->
     <link rel="icon" type="image/x-icon" href="../Img/tala-gob.png"> <!-- Icono de la pestaña -->
-    <link rel="preload" href="../Img/tla-banner.jpg" as="image"> <!-- Precarga de la imagen -->
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         #banner {
             background-image: url("../img/tla-banner.jpg");
@@ -16,37 +17,75 @@
             background-position: center;
             height: 300px;
         }
+        .banner-image {
+            display: none; /* Ocultamos la imagen adicional */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffcc00; /* Color de hover */
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div id="banner"></div>
-    <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="../Pages/Servicios.html">Servicios</a>
-        <a href="../Pages/hacienda.html">Hacienda Municipal</a>
-        <a href="../Pages/Dif.html">DIF Municipal</a>
-        <a href="omast.html">OMAST</a>
-    </nav>
+        <div id="banner" class="d-flex align-items-center justify-content-center">       </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Img/tala-gob.png" alt="Gobierno de Tala" width="30" height="30" class="d-inline-block align-top">
+                    Inicio
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="Servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Transparencia.html">Transparencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hacienda.html">Hacienda Municipal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Dif.html">DIF Municipal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://omast.com.mx/">OMAST</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-
-    <main>       
-            
-        <section id="inicio">
-            <center><h2>Bienvenidos al apartado de Transparencia del Gobierno Municipal de Tala, Jalisco</h2></center>
+    <main class="container mt-4">
+        <section id="inicio" class="text-center">
+            <h2>Bienvenidos al apartado de Transparencia del Gobierno Municipal de Tala, Jalisco</h2>
             <p>El Gobierno Municipal de Tala, Jalisco, a través de la Unidad de Transparencia,
                 le da la bienvenida y pone a su disposición la información pública que se genera en distintas dependencias municipales. 
                 De acuerdo con la Ley de Transparencia y Acceso a la Información Pública del Estado de Jalisco y sus Municipios,
                  nuestro compromiso es garantizar el derecho fundamental de acceder a la información. Para ello, hemos optimizado los mecanismos para consultar
                   la información pública.
             </p>
-        </section>                 
         </section>
-        <section id="articulos">
+        <section id="articulos" class="mt-4">
             <h2 class="section-title">Nuestras Obligaciones:</h2>
             <div class="table-container">
-                <table>
-                    <thead>
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-dark">
                         <tr>
                             <th>Artículo</th>
                             <th>Descripción</th>
@@ -73,8 +112,7 @@
                 </table>
             </div>
         </section>
-                
-        <section id="reltran">
+        <section id="reltran" class="mt-4">
             <h2 class="section-title">Sitios Relacionados:</h2>
             <div class="content-box">
                 <ul>
@@ -87,54 +125,53 @@
                 </ul>
             </div>
         </section>
-        
-        <nav id="emergencias-nav">
+        <nav id="emergencias-nav" class="mt-4">
             <h2>Números de Emergencias</h2>
-            <ul>
-                <li>
-                    <div class="icon ayuntamiento"></div>
+            <ul class="list-unstyled">
+                <li class="mb-2">
+                    <div class="icon ayuntamiento mr-2"></div>
                     <span>Ayuntamiento</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 690 5100</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon seguridad"></div>
+                <li class="mb-2">
+                    <div class="icon seguridad mr-2"></div>
                     <span>Seguridad Pública</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 0555</li>
                             <li>384 738 0757</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon proteccion"></div>
+                <li class="mb-2">
+                    <div class="icon proteccion mr-2"></div>
                     <span>Protección Civil</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 3696</li>
                             <li>384 733 2183</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon movilidad"></div>
+                <li class="mb-2">
+                    <div class="icon movilidad mr-2"></div>
                     <span>Movilidad</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 0036</li>
                             <li>384 690 5129</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon servicios"></div>
+                <li class="mb-2">
+                    <div class="icon servicios mr-2"></div>
                     <span>Servicios Públicos</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 0300</li>
                         </ul>
                     </div>
@@ -142,15 +179,18 @@
             </ul>
         </nav>
     </main>
-
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>Ramón Corona #5, Tala, Jalisco</p>
         <p>&copy; 2024 Gobierno Municipal de Tala, Jalisco. Todos los derechos reservados.</p>
         <p>Síguenos en: 
-            <a href="#" style="color: white;">Facebook</a> | 
-            <a href="#" style="color: white;">Twitter</a> | 
-            <a href="#" style="color: white;">Instagram</a>
+            <a href="#" class="text-white">Facebook</a> | 
+            <a href="#" class="text-white">Twitter</a> | 
+            <a href="#" class="text-white">Instagram</a>
         </p>
     </footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

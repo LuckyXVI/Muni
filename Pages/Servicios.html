@@ -8,25 +8,51 @@
     <title>Gobierno Municipal de Tala, Jalisco</title>
     <link rel="stylesheet" href="../CSS/styles.css"> <!-- Archivo CSS externo -->
     <link rel="icon" type="image/x-icon" href="../Img/tala-gob.png"> <!-- Icono de la pestaña -->
-    <link rel="preload" href="../Img/tla-banner.jpg" as="image"> <!-- Precarga de la imagen -->
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         #banner {
-            background-image: url("../img/tla-banner.jpg");
+            background-image: url("../Img/tla-banner.jpg");
             background-size: cover;
             background-position: center;
             height: 300px;
         }
+        .banner-image {
+            display: none; /* Ocultamos la imagen adicional */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffcc00; /* Color de hover */
+        }
     </style>
-</head>
 <body>
     <header>
-        <div id="banner"></div>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="../Pages/Transparencia.html">Transparencia</a>
-            <a href="../Pages/hacienda.html">Hacienda Municipal</a>
-            <a href="../Pages/Dif.html">DIF Municipal</a>
-            <a href="https://omast.com.mx/">OMAST</a>
+        <div id="banner" class="d-flex align-items-center justify-content-center">       </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Img/tala-gob.png" alt="Gobierno de Tala" width="30" height="30" class="d-inline-block align-top">
+                    Inicio
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="Servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Transparencia.html">Transparencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hacienda.html">Hacienda Municipal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Dif.html">DIF Municipal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://omast.com.mx/">OMAST</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -50,11 +76,11 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong><a href="articulo8dif.html">Tramites</a></strong></td>
+                            <td><strong><a href="../Pages/Servicios.html">Tramites</a></strong></td>
                             <td>La documentación necesaria para realizar diversos tramites.</td>
                         </tr>
                         <tr>
-                            <td><strong><a href="articulo8dif.html">Directorio</a></strong></td>
+                            <td><strong><a href="../Pages/Servicios.html">Directorio</a></strong></td>
                             <td>Directorio Telefonico de nuestros departamentos.</td>
                         </tr>
                     </tbody>
@@ -116,14 +142,18 @@
         </nav>
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>Ramón Corona #5, Tala, Jalisco</p>
         <p>&copy; 2024 Gobierno Municipal de Tala, Jalisco. Todos los derechos reservados.</p>
         <p>Síguenos en: 
-            <a href="#" style="color: white;">Facebook</a> | 
-            <a href="#" style="color: white;">Twitter</a> | 
-            <a href="#" style="color: white;">Instagram</a>
+            <a href="#" class="text-white">Facebook</a> | 
+            <a href="#" class="text-white">Twitter</a> | 
+            <a href="#" class="text-white">Instagram</a>
         </p>
     </footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

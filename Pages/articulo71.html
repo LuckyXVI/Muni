@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../CSS/styles.css"> <!-- Archivo CSS externo -->
     <link rel="icon" type="image/x-icon" href="../Img/tala-gob.png"> <!-- Icono de la pestaña -->
     <link rel="preload" href="../Img/tla-banner.jpg" as="image"> <!-- Precarga de la imagen -->
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Estilos para el menú desplegable */
         .menu-desplegable {
@@ -32,19 +34,17 @@
 
         .menu-desplegable button {
             width: 100%;
-            padding: 15px;
-            font-size: 1.1em;
-            text-align: left;
-            background: #004080;
-            color: white;
+            background: none;
             border: none;
-            outline: none;
+            padding: 15px;
+            text-align: left;
+            font-size: 1em;
             cursor: pointer;
-            transition: background 0.3s;
+            outline: none;
         }
 
         .menu-desplegable button:hover {
-            background: #0059b3;
+            background-color: #f1f1f1;
         }
 
         .submenu {
@@ -77,6 +77,7 @@
                 width: 90%;
             }
         }
+
         #banner {
             background-image: url("../img/tla-banner.jpg");
             background-size: cover;
@@ -87,20 +88,31 @@
 </head>
 <body>
     <header>
-        <div id="banner"></div>  
-
-    <main>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="../Pages/Servicios.html">Servicios</a>
-            <a href="../Pages/hacienda.html">Hacienda Municipal</a>
-            <a href="../Pages/Transparencia.html ">Transparencia</a>
-            <a href="../Pages/Dif.html">DIF Municipal</a>
-            <a href="https://omast.com.mx/">OMAST</a>
+        <div id="banner" class="d-flex align-items-center justify-content-center"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Img/tala-gob.png" alt="Gobierno de Tala" width="30" height="30" class="d-inline-block align-top">
+                    Inicio
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="Servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Transparencia.html">Transparencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hacienda.html">Hacienda Municipal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Dif.html">DIF Municipal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://omast.com.mx/">OMAST</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+    <main class="container mt-4">
         <section>
-            <center><h2>Articulo 71</h2></center>            
+            <center><h2>Artículo 71</h2></center>
             <ul class="menu-desplegable">
                 <!-- Opciones del 1 al 2 -->
                 <li>
@@ -128,53 +140,53 @@
                 </li>               
             </ul>
         </section>
-        <nav id="emergencias-nav">
+        <nav id="emergencias-nav" class="mt-4">
             <h2>Números de Emergencias</h2>
-            <ul>
-                <li>
-                    <div class="icon ayuntamiento"></div>
+            <ul class="list-unstyled">
+                <li class="mb-2">
+                    <div class="icon ayuntamiento mr-2"></div>
                     <span>Ayuntamiento</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 690 5100</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon seguridad"></div>
+                <li class="mb-2">
+                    <div class="icon seguridad mr-2"></div>
                     <span>Seguridad Pública</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 0555</li>
                             <li>384 738 0757</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon proteccion"></div>
+                <li class="mb-2">
+                    <div class="icon proteccion mr-2"></div>
                     <span>Protección Civil</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 3696</li>
                             <li>384 733 2183</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon movilidad"></div>
+                <li class="mb-2">
+                    <div class="icon movilidad mr-2"></div>
                     <span>Movilidad</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 0036</li>
                             <li>384 690 5129</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon servicios"></div>
+                <li class="mb-2">
+                    <div class="icon servicios mr-2"></div>
                     <span>Servicios Públicos</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 0300</li>
                         </ul>
                     </div>
@@ -182,13 +194,19 @@
             </ul>
         </nav>
     </main>
-
-
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>Ramón Corona #5, Tala, Jalisco</p>
         <p>&copy; 2024 Gobierno Municipal de Tala, Jalisco. Todos los derechos reservados.</p>
+        <p>Síguenos en: 
+            <a href="#" class="text-white">Facebook</a> | 
+            <a href="#" class="text-white">Twitter</a> | 
+            <a href="#" class="text-white">Instagram</a>
+        </p>
     </footer>
-
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         // Función para alternar la visibilidad de los submenús
         function toggleMenu(submenuId) {
