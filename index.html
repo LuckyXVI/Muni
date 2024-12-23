@@ -21,22 +21,45 @@
         .banner-image {
             display: none; /* Ocultamos la imagen adicional */
         }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffcc00; /* Color de hover */
+        }
     </style>
 </head>
 <body>
     <header>
-        <div id="banner"></div>
-        <nav>
-            <a href="Pages/Servicios.html">Servicios</a>
-            <a href="Pages/Transparencia.html">Transparencia</a>
-            <a href="Pages/hacienda.html">Hacienda Municipal</a>
-            <a href="Pages/Dif.html">DIF Municipal</a>
-            <a href="https://omast.com.mx/">OMAST</a>
+        <div id="banner" class="d-flex align-items-center justify-content-center">      
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Img/tala-gob.png" alt="Gobierno de Tala" width="30" height="30" class="d-inline-block align-top">
+                    Inicio
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="Pages/Servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Pages/Transparencia.html">Transparencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Pages/hacienda.html">Hacienda Municipal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Pages/Dif.html">DIF Municipal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://omast.com.mx/">OMAST</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <section id="inicio">
-            <center><h2>Bienvenidos</h2></center>
+    <main class="container mt-4">
+        <section id="inicio" class="text-center">
+            <h2>Bienvenidos</h2>
             <p>En esta página encontrarás información sobre los servicios municipales, programas y nuestro compromiso con nuestro municipio.</p>
         </section>
         <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -65,78 +88,78 @@
                 <span class="sr-only">Next</span>
             </a>
         </section>
-        <section>
-            <nav id="programasdif-nav">
+        <aside class="mt-4">
+            <nav id="programasdif-nav" class="bg-light p-3 rounded">
                 <h2>Información de Interés</h2>
-                <ul>
-                    <li>
-                        <a href="Pages/Servicios.html" class="info-item">
-                            <div class="icon alimentaria"></div>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="Pages/Servicios.html" class="info-item d-flex align-items-center">
+                            <div class="icon alimentaria mr-2"></div>
                             <span>Tramites</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="Pages/Servicios.html" class="info-item">
-                            <div class="icon ayuda"></div>
+                    <li class="mb-2">
+                        <a href="Pages/Servicios.html" class="info-item d-flex align-items-center">
+                            <div class="icon ayuda mr-2"></div>
                             <span>Directorio</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.gob.mx/curp/" class="info-item">
-                            <div class="icon organizacion"></div>
+                    <li class="mb-2">
+                        <a href="https://www.gob.mx/curp/" class="info-item d-flex align-items-center">
+                            <div class="icon organizacion mr-2"></div>
                             <span>Curp</span>
                         </a>
                     </li>
                 </ul>
             </nav>
-        </section>
-        <nav id="emergencias-nav">
+        </aside>
+        <nav id="emergencias-nav" class="mt-4">
             <h2>Números de Emergencias</h2>
-            <ul>
-                <li>
-                    <div class="icon ayuntamiento"></div>
+            <ul class="list-unstyled">
+                <li class="mb-2">
+                    <div class="icon ayuntamiento mr-2"></div>
                     <span>Ayuntamiento</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 690 5100</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon seguridad"></div>
+                <li class="mb-2">
+                    <div class="icon seguridad mr-2"></div>
                     <span>Seguridad Pública</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 0555</li>
                             <li>384 738 0757</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon proteccion"></div>
+                <li class="mb-2">
+                    <div class="icon proteccion mr-2"></div>
                     <span>Protección Civil</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 3696</li>
                             <li>384 733 2183</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon movilidad"></div>
+                <li class="mb-2">
+                    <div class="icon movilidad mr-2"></div>
                     <span>Movilidad</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 0036</li>
                             <li>384 690 5129</li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div class="icon servicios"></div>
+                <li class="mb-2">
+                    <div class="icon servicios mr-2"></div>
                     <span>Servicios Públicos</span>
                     <div class="contacto">
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>384 738 0300</li>
                         </ul>
                     </div>
@@ -144,13 +167,13 @@
             </ul>
         </nav>
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>Ramón Corona #5, Tala, Jalisco</p>
         <p>&copy; 2024 Gobierno Municipal de Tala, Jalisco. Todos los derechos reservados.</p>
         <p>Síguenos en: 
-            <a href="#" style="color: white;">Facebook</a> | 
-            <a href="#" style="color: white;">Twitter</a> | 
-            <a href="#" style="color: white;">Instagram</a>
+            <a href="#" class="text-white">Facebook</a> | 
+            <a href="#" class="text-white">Twitter</a> | 
+            <a href="#" class="text-white">Instagram</a>
         </p>
     </footer>
     <!-- Bootstrap JS, Popper.js, and jQuery -->
