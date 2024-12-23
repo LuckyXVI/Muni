@@ -6,7 +6,9 @@
     <meta name="description" content="Página oficial del Gobierno Municipal de Tala, Jalisco. Información, servicios y transparencia.">
     <meta name="author" content="Gobierno Municipal de Tala, Jalisco">
     <title>Gobierno Municipal de Tala, Jalisco</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS externo -->
+    <link rel="stylesheet" href="../CSS/styles.css"> <!-- Archivo CSS externo -->
+    <link rel="icon" type="image/x-icon" href="../Img/tala-gob.png"> <!-- Icono de la pestaña -->
+    <link rel="preload" href="../Img/tla-banner.jpg" as="image"> <!-- Precarga de la imagen -->
     <style>
         /* Estilos para el menú desplegable */
         .menu-desplegable {
@@ -75,23 +77,28 @@
                 width: 90%;
             }
         }
+        #banner {
+            background-image: url("../img/tla-banner.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Gobierno Municipal de Tala, Jalisco</h1>
-        <p>Es tiempo de la gente</p>
-    </header>
+        <div id="banner"></div>  
 
     <main>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="Servicios.html">Servicios</a>
-            <a href="hacienda.html">Hacienda Municipal</a>
-            <a href="Transparencia.html ">Transparencia</a>
-            <a href="Dif.html">DIF Municipal</a>
+            <a href="../index.html">Inicio</a>
+            <a href="../Pages/Servicios.html">Servicios</a>
+            <a href="../Pages/hacienda.html">Hacienda Municipal</a>
+            <a href="../Pages/Transparencia.html ">Transparencia</a>
+            <a href="../Pages/Dif.html">DIF Municipal</a>
             <a href="https://omast.com.mx/">OMAST</a>
         </nav>
+    </header>
         <section>
             <center><h2>Articulo 71</h2></center>            
             <ul class="menu-desplegable">
