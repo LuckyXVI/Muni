@@ -1,3 +1,10 @@
+   /* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+            #banner {
+                height: 200px; /* Ajusta la altura para pantallas más pequeñas */
+                background-size: contain; /* Ajusta el tamaño de la imagen para que se contenga dentro del banner */
+            }
+        }
 /* Estilo general */
 body {
     font-family: Arial, sans-serif;
