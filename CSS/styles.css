@@ -283,23 +283,6 @@ td strong {
         font-size: 0.9em;
     }
 }
-
-/* Media Queries para dispositivos móviles */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 10px;
-    }
-}
-
 /* Estilo general para la sección */
 #programasdif-nav {
     width: 80%;
@@ -375,20 +358,4 @@ td strong {
 .icon.procuraduria {
     background-image: url('icons/procuraduria.png');
     background-color: #aaff80;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    #programasdif-nav {
-        width: 90%;
-    }
-
-    .info-item {
-        font-size: 1em;
-    }
-
-    .icon {
-        width: 30px;
-        height: 30px;
-    }
 }
