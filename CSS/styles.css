@@ -41,7 +41,6 @@ section {
 section h2 {
     color: #008000; /* Verde */
 }
-
 /* Estilo del banner */
 #banner {
     background-image: url("../Img/tla-banner.jpg");
@@ -53,9 +52,10 @@ section h2 {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     #banner {
-        height: 250px; /* Ajusta la altura para pantallas más pequeñas */
+        height: 150px; /* Ajusta la altura para pantallas más pequeñas */
         background-size: contain; /* Ajusta el tamaño de la imagen para que se contenga dentro del banner */
     }
+}
 }
 
 .banner-image {
