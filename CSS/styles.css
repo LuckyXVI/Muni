@@ -52,7 +52,7 @@ section h2 {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     #banner {
-        height: 150px; /* Ajusta la altura para pantallas más pequeñas */
+        height: 170px; /* Ajusta la altura para pantallas más pequeñas */
         background-size: 100%; /* Ajusta el tamaño de la imagen para que se ensanche más */
     }
 }
