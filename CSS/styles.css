@@ -84,130 +84,104 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Estilos del nav */
+/* Contenedor principal */
 #emergencias-nav {
-    max-width: 100%; /* Ocupa todo el ancho disponible */
-    background-color: #f4f4f4; /* Fondo claro */
-    border-top: 4px solid #ff6600; /* Línea superior de acento */
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-#emergencias-nav h2 {
+/* Título principal */
+.emergencias-titulo {
+    font-size: 1.8em;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 1.5em;
-    color: #004080;
+    color: #333;
 }
 
-#emergencias-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Contenedor de tarjetas */
+.emergencias-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 0;
-    list-style: none;
-    margin: 0;
 }
 
-#emergencias-nav ul li {
+/* Tarjetas individuales */
+.emergencia-item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 200px; /* Tamaño estándar por elemento */
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    background-color: #ffffff;
     padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-#emergencias-nav ul li:hover {
+.emergencia-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-#emergencias-nav ul li .icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+/* Iconos */
+.icon {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
 }
 
 .icon.ayuntamiento {
-    background-color: #004080;
+    background-color: #ff7043;
 }
 
 .icon.seguridad {
-    background-color: #ff6600;
+    background-color: #42a5f5;
 }
 
 .icon.proteccion {
-    background-color: #008000;
+    background-color: #66bb6a;
 }
 
 .icon.movilidad {
-    background-color: #ffa500;
+    background-color: #ffa726;
 }
 
 .icon.servicios {
-    background-color: #00bfff;
+    background-color: #ab47bc;
 }
 
-#emergencias-nav ul li span {
-    font-size: 1em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-#emergencias-nav ul li .contacto {
-    font-size: 0.9em;
-    color: #555;
-}
-
-#emergencias-nav ul li .contacto ul {
-    list-style: none;
-    padding: 0;
+/* Detalles de emergencia */
+.emergencia-detalles h3 {
     margin: 0;
+    font-size: 1.2em;
+    color: #333;
 }
 
-#emergencias-nav ul li .contacto ul li {
-    margin: 5px 0;
+.emergencia-detalles p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #666;
 }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-    #emergencias-nav ul li {
-        width: 150px;
-        padding: 10px;
-    }
-
-    #emergencias-nav ul li .icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    #emergencias-nav ul li span {
-        font-size: 0.9em;
-    }
-
-    #emergencias-nav ul li .contacto {
-        font-size: 0.8em;
-    }
+/* Hacer los números telefónicos clicables */
+.emergencia-detalles a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.2s;
 }
 
-@media (max-width: 480px) {
-    #emergencias-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #emergencias-nav ul li {
-        width: 90%;
-    }
+.emergencia-detalles a:hover {
+    color: #0056b3;
 }
 
 /* Estilos Generales */
