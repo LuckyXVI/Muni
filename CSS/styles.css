@@ -52,14 +52,18 @@ section h2 {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     #banner {
-        height: 170px; /* Ajusta la altura para pantallas más pequeñas */
+        height: 200px; /* Ajusta la altura para pantallas más pequeñas */
         background-size: 100%; /* Ajusta el tamaño de la imagen para que se ensanche más */
     }
-}
 }
 
 .banner-image {
     display: none; /* Ocultamos la imagen adicional */
+}
+/*Imagenes de frecuentes*/
+.icon-img {
+    width: 50px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* Pie de página */
